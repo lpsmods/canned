@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:pumpkin_pie_can"
+  },
+  "result": {
+    "id": "minecraft:pumpkin_pie",
+    "count": 8
+  }
+}

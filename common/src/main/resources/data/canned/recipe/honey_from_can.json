@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:honey_can"
+  },
+  "result": {
+    "id": "minecraft:honey_bottle",
+    "count": 8
+  }
+}

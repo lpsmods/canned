@@ -1,21 +1,20 @@
 package dev.lpsmods.canned.item;
 
-import dev.lpsmods.canned.core.ModItems;
+import dev.lpsmods.canned.core.ModRecipes;
+import dev.lpsmods.canned.crafting.CanOpenerRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.DiggerItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
-/**
- * Author: legopitstop
- */
+import java.util.Optional;
+
 public class CanOpenerItem extends DiggerItem {
     public CanOpenerItem(Tier tier, Item.Properties settings) {
         super(tier, BlockTags.MINEABLE_WITH_AXE, settings);
@@ -23,20 +22,33 @@ public class CanOpenerItem extends DiggerItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player user, InteractionHand hand) {
-        user.getCooldowns().addCooldown(this, 10);
-        ItemStack mainHand = user.getItemInHand(InteractionHand.MAIN_HAND);
-        ItemStack offHand = user.getItemInHand(InteractionHand.OFF_HAND);
         if (level.isClientSide) {return InteractionResultHolder.pass(user.getItemInHand(hand));}
-        boolean isCan = offHand.getItem() instanceof CanFoodItem;
-        if (isCan && mainHand.is(this)) {
-            ItemStack stack = new ItemStack(((CanFoodItem) offHand.getItem()).getResultItem(), 8);
-            user.addItem(stack);
-            user.addItem(new ItemStack(ModItems.CAN));
-            mainHand.setDamageValue(1);
-            offHand.shrink(1);
-            return InteractionResultHolder.success(mainHand);
+        ItemStack input = getIngredient(user, hand);
+        ItemStack stack = user.getItemInHand(hand);
+        Optional<RecipeHolder<CanOpenerRecipe>> recipe = getCurrentRecipe(level, input);
+        if (recipe.isPresent()) {
+            input.shrink(1);
+            ItemStack output = recipe.get().value().getResultItem(null);
+            user.addItem(output);
+            user.getCooldowns().addCooldown(this, 10);
+            if (!user.isCreative()) {
+                stack.setDamageValue(stack.getDamageValue()+1);
+            }
+            return InteractionResultHolder.success(stack);
         }
         return super.use(level, user, hand);
+    }
+
+    private ItemStack getIngredient(Player user, InteractionHand hand) {
+        if (hand == InteractionHand.MAIN_HAND) {
+            return user.getItemInHand(InteractionHand.OFF_HAND);
+        }
+        return user.getItemInHand(InteractionHand.MAIN_HAND);
+    }
+
+    private Optional<RecipeHolder<CanOpenerRecipe>> getCurrentRecipe(Level level, ItemStack stack) {
+        SingleRecipeInput input = new SingleRecipeInput(stack);
+        return level.getRecipeManager().getRecipeFor(ModRecipes.CAN_OPENER_RECIPE_TYPE.get(), input, level);
     }
 
     @Override

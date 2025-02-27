@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "canned:cans",
+    "ingredients": [
+        {
+            "item": "canned:can"
+        },
+        {
+            "item": "minecraft:cookie"
+        },
+        {
+            "item": "minecraft:cookie"
+        },
+        {
+            "item": "minecraft:cookie"
+        },
+        {
+            "item": "minecraft:cookie"
+        },
+        {
+            "item": "minecraft:cookie"
+        },
+        {
+            "item": "minecraft:cookie"
+        },
+        {
+            "item": "minecraft:cookie"
+        },
+        {
+            "item": "minecraft:cookie"
+        }
+    ],
+    "result": {
+        "id": "canned:cookie_can"
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:cooked_porkchop_can"
+  },
+  "result": {
+    "id": "minecraft:cooked_porkchop",
+    "count": 8
+  }
+}

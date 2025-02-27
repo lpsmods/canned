@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "canned:cans",
+    "ingredients": [
+        {
+            "item": "canned:can"
+        },
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "minecraft:bread"
+        },
+        {
+            "item": "minecraft:bread"
+        }
+    ],
+    "result": {
+        "id": "canned:bread_can"
+    }
+}

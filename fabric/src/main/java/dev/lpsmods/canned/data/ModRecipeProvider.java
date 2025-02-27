@@ -22,7 +22,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void buildRecipes(RecipeOutput exporter) {
         // Can Opener
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CAN_OPENER).pattern(" N").pattern("N ").define('N', Items.IRON_NUGGET).unlockedBy("hasIronNugget", FabricRecipeProvider.has(Items.IRON_NUGGET)).save(exporter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CAN_OPENER.get()).pattern(" N").pattern("N ").define('N', Items.IRON_NUGGET).unlockedBy("hasIronNugget", FabricRecipeProvider.has(Items.IRON_NUGGET)).save(exporter);
 
         // Cans
         BuiltInRegistries.BLOCK.stream().filter(block -> BuiltInRegistries.BLOCK.getKey(block).getNamespace().equals(Constants.MOD_ID)).forEach(entry -> {

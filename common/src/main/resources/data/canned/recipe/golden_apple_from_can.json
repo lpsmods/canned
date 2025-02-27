@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:golden_apple_can"
+  },
+  "result": {
+    "id": "minecraft:golden_apple",
+    "count": 8
+  }
+}

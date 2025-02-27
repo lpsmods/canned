@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "canned:cans",
+    "ingredients": [
+        {
+            "item": "canned:can"
+        },
+        {
+            "item": "minecraft:poisonous_potato"
+        },
+        {
+            "item": "minecraft:poisonous_potato"
+        },
+        {
+            "item": "minecraft:poisonous_potato"
+        },
+        {
+            "item": "minecraft:poisonous_potato"
+        },
+        {
+            "item": "minecraft:poisonous_potato"
+        },
+        {
+            "item": "minecraft:poisonous_potato"
+        },
+        {
+            "item": "minecraft:poisonous_potato"
+        },
+        {
+            "item": "minecraft:poisonous_potato"
+        }
+    ],
+    "result": {
+        "id": "canned:poisonous_potato_can"
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:golden_carrot_can"
+  },
+  "result": {
+    "id": "minecraft:golden_carrot",
+    "count": 8
+  }
+}

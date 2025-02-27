@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:chorus_fruit_can"
+  },
+  "result": {
+    "id": "minecraft:chorus_fruit",
+    "count": 8
+  }
+}

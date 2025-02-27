@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:potato_can"
+  },
+  "result": {
+    "id": "minecraft:potato",
+    "count": 8
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:suspicious_stew_can"
+  },
+  "result": {
+    "id": "minecraft:suspicious_stew",
+    "count": 8
+  }
+}

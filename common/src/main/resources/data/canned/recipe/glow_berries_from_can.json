@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:glow_berries_can"
+  },
+  "result": {
+    "id": "minecraft:glow_berries",
+    "count": 8
+  }
+}

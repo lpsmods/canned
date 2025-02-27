@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:melon_can"
+  },
+  "result": {
+    "id": "minecraft:melon_slice",
+    "count": 8
+  }
+}

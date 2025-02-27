@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:cooked_salmon_can"
+  },
+  "result": {
+    "id": "minecraft:cooked_salmon",
+    "count": 8
+  }
+}

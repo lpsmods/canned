@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "canned:cans",
+    "ingredients": [
+        {
+            "item": "canned:can"
+        },
+        {
+            "item": "minecraft:cooked_rabbit"
+        },
+        {
+            "item": "minecraft:cooked_rabbit"
+        },
+        {
+            "item": "minecraft:cooked_rabbit"
+        },
+        {
+            "item": "minecraft:cooked_rabbit"
+        },
+        {
+            "item": "minecraft:cooked_rabbit"
+        },
+        {
+            "item": "minecraft:cooked_rabbit"
+        },
+        {
+            "item": "minecraft:cooked_rabbit"
+        },
+        {
+            "item": "minecraft:cooked_rabbit"
+        }
+    ],
+    "result": {
+        "id": "canned:cooked_rabbit_can"
+    }
+}

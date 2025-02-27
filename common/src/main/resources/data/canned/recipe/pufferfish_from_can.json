@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:pufferfish_can"
+  },
+  "result": {
+    "id": "minecraft:pufferfish",
+    "count": 8
+  }
+}

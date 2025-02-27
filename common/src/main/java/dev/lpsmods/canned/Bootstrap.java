@@ -1,18 +1,10 @@
 package dev.lpsmods.canned;
 
-import dev.lpsmods.canned.core.*;
-
 /**
 * Author: legopitstop
 */
 public class Bootstrap {
     public static void init() {
-        ModTags.Items.init();
-        ModTags.Blocks.init();
-        ModBlocks.init();
-        ModItems.init();
-        ModCreativeTabs.init();
-
         // Register Supported Mods
 //        if (!Services.PLATFORM.isModLoaded("farmersdelight")) {};
 //        if (!Services.PLATFORM.isModLoaded("morefood")) {};

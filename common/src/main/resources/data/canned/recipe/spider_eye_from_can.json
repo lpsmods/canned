@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:spider_eye_can"
+  },
+  "result": {
+    "id": "minecraft:spider_eye",
+    "count": 8
+  }
+}

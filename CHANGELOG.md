@@ -4,9 +4,26 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [fabric-1.2.0] - unreleased
+## [forge-1.2.0] (1.21) - unreleased
 
+### General
+
+Initial release
+
+## [neoforge-1.2.0] (1.21) - unreleased
+
+### General
+
+Initial release
+
+## [fabric-1.2.0] (1.21) - unreleased
+
+### General
+
+- Updated for Minecraft 1.21.
 - Top and bottom faces are now culled.
+- Requires Framework 0.9.1
+- Can opener recipes are now data-driven using the `canned:can_opener` recipe type.
 
 ## [bedrock-1.1.0] 5/22/2023
 

@@ -1,0 +1,10 @@
+{
+  "type": "canned:can_opener",
+  "ingredient": {
+    "item": "canned:rotten_flesh_can"
+  },
+  "result": {
+    "id": "minecraft:rotten_flesh",
+    "count": 8
+  }
+}
