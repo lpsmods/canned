@@ -4,19 +4,19 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [forge-1.2.0] (1.21) - unreleased
+## [forge-1.2.0] (1.21) - 2/26/2025
 
 ### General
 
 Initial release
 
-## [neoforge-1.2.0] (1.21) - unreleased
+## [neoforge-1.2.0] (1.21) - 2/26/2025
 
 ### General
 
 Initial release
 
-## [fabric-1.2.0] (1.21) - unreleased
+## [fabric-1.2.0] (1.21) - 2/26/2025
 
 ### General
 
@@ -25,13 +25,13 @@ Initial release
 - Requires Framework 0.9.1
 - Can opener recipes are now data-driven using the `canned:can_opener` recipe type.
 
-## [bedrock-1.1.0] 5/22/2023
+## [bedrock-1.1.0] - 5/22/2023
 
 ### General
 
 - Updated for 1.19.80
 
-## [bedrock-1.0.0] 7/31/2022
+## [bedrock-1.0.0] - 7/31/2022
 
 Initial Release
 
