@@ -1,5 +1,10 @@
 # Canned
 
+![Curseforge](https://img.shields.io/curseforge/dt/908750?logo=curseforge&label=&suffix=%20&style=for-the-badge&color=242629&labelColor=e04e14&logoColor=1c1c1c)
+![Modrinth](https://img.shields.io/modrinth/dt/canned?logo=modrinth&label=&suffix=%20&style=for-the-badge&color=242629&labelColor=5ca424&logoColor=1c1c1c)
+![Version](https://img.shields.io/curseforge/v/908750?style=for-the-badge)
+![Game Versions](https://img.shields.io/curseforge/game-versions/908750?style=for-the-badge)
+
 Canned goods?
 
 ## Mod Data
@@ -9,7 +14,7 @@ Canned goods?
 | namespace | `canned` |
 | slug      | `canned` |
 
-## Editions
+## Loaders
 
 - Bedrock
 - Data Pack
