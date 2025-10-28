@@ -4,6 +4,7 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -83,11 +84,21 @@ public class CanBlock extends Block implements SimpleWaterloggedBlock {
         return false;
     }
 
+    public boolean placeLiquid(LevelAccessor level, BlockPos pos, BlockState state, FluidState fluidState) {
+        if (state.getValue(WATERLOGGED) || fluidState.getType() != Fluids.WATER) {
+            return false;
+        }
+        BlockState blockState = (BlockState)state.setValue(WATERLOGGED, true);
+        level.setBlock(pos, blockState, 3);
+        level.scheduleTick(pos, fluidState.getType(), fluidState.getType().getTickDelay(level));
+        return true;
+    }
+
     static {
         WATERLOGGED = BooleanProperty.create("waterlogged");
         CANS = IntegerProperty.create("cans", 1, 8);
         SMALL_AABB = Block.box(4,0,4, 12,9,12);
-        MEDIUM_AABB = Block.box(0,0,0, 16, 8, 16);
-        LARGE_AABB = Block.box(0,0,0, 16, 16, 16);
+        MEDIUM_AABB = Block.box(1,0,1, 15, 8, 15);
+        LARGE_AABB = Block.box(1,0,1, 15, 16, 15);
     }
 }
