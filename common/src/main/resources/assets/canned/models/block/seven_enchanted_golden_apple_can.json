@@ -1,6 +1,0 @@
-{
-	"parent": "canned:block/template_seven_can",
-	"textures": {
-		"texture": "canned:block/enchanted_golden_apple_can"
-	}
-}

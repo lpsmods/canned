@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "lpsm_canned:empty_can"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["NNN", "N N", "NNN"],
+    "key": {
+      "N": {
+        "item": "minecraft:iron_nugget"
+      }
+    },
+    "result": "lpsm_canned:empty_can"
+  }
+}

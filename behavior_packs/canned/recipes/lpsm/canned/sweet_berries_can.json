@@ -1,0 +1,39 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "lpsm_canned:sweet_berries_can"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "lpsm_canned:empty_can"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      }
+    ],
+    "result": "lpsm_canned:sweet_berries_can"
+  }
+}

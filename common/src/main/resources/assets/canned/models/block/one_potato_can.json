@@ -1,6 +1,0 @@
-{
-	"parent": "canned:block/template_one_can",
-	"textures": {
-		"texture": "canned:block/potato_can"
-	}
-}
