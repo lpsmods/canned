@@ -18,7 +18,7 @@ This repository has multiple branches for each platform this Minecraft mod suppo
 | Key       | Value         |
 | --------- | ------------- |
 | namespace | `lpsm_canned` |
-| canned    | `canned`      |
+| slug      | `canned`      |
 
 ## LINKS
 
