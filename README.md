@@ -10,7 +10,7 @@ Canned adds new blocks used to store your foods! Add up to 8 cans in the same bl
 
 This repository has multiple branches for each platform this Minecraft mod supports.
 
-- [`1.21`](https://github.com/lpsmods/canned/tree/1.21)
+- [`java`](https://github.com/lpsmods/canned/tree/1.21)
 - [`bedrock`](https://github.com/lpsmods/canned/tree/bedrock)
 
 ## Mod Data
